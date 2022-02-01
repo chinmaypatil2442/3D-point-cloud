@@ -1,1 +1,8 @@
 # 3D-point-cloud
+
+
+Left Atrial Electroanatomical Voltage Mapping Registration and Classification on the Type and Recurrence of Atrial Fibrillation after Atrial Fibrillation Ablation
+
+
+
+Atrial Fibrillation (AF) is a common cardiac arrhythmia that affects one to two percent of the population. Low atrial endocardial bipolar voltage shows many useful associations with clinical outcomes, comorbidities and has links to trigger sites for AF. In this work, we stud- ied to leverage the atrial endocardial bipolar voltage map to predict the AF type and recurrence of AF in 1 year for patients in sinus rhythm. There problem is very challenging for several reasons: 1) Since the bipo- lar voltage are collected at different locations on the endocardium and the shape of endocardium varies widely on different patients, the bipo- lar voltage map need to be aligned onto the same coordinates; 2) the collected training dataset size is very small. To address this above chal- lenges, we utilize a pre-trained 3D point cloud registration approach from public 3D point cloud dataset and fine-tune it on the left atrial voltage map to 1) learn the geometric feature and 3) align all of voltage map into same template. After alignment, we put the bipolar and unipolar values from the registered points into multi-layer perceptron (MLP) classifier to predict the Paroxysmal and Persistent AF type or the risk of recurrence of AF in 1 year for patients in sinus rhythm. The result show our method is very competitive in the classification on the type and recurrence of AF
